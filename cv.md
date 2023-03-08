@@ -62,7 +62,7 @@ function formatDuration (seconds) {
 ```
 
 ## Last occupation  
-scientific curation specialist (non-IT, contractor) since 2010 till 2022 
+scientific curation specialist (non-IT, contractor) since 2010 till 2022  
 EPAM Systems (St. Petersburg branch)
   
 ## Education  

@@ -15,26 +15,49 @@ A highly proficient and experienced chemist worked for EPAM Systems till 2022. A
 Beginner
 
 ## Code example
-[Partitition on - 5 kyu kata at Codewars:](https://www.codewars.com/kata/525a037c82bf42b9f800029b)
+[Human readable duration format - 4 kyu kata at Codewars:](https://www.codewars.com/kata/52742f58faf5485cae000b9a)
 
 ```
-function partitionOn(pred, items) {
+function formatDuration (seconds) {
+  if (seconds == 0) return "now";
+  let secs = seconds % 60;
+  let mins = Math.floor(seconds /60) % 60;
+  let hours = Math.floor(seconds / 3600) % 24;
+  let days = Math.floor(seconds / (24 * 3600)) % 365;
+  let years = Math.floor(seconds / (365 * 24 * 3600));
+  let result = '';
   let arr = [];
-  let arr1 = [];
-  for (j = 0; j < items.length; j++) {
-    if (pred(items[j]) == false) {
-      arr.push(items[j]);
-    } else {
-      arr1.push(items[j]);
-    }
+  if (years != 0) {
+    let y = (years > 1) ? `${years} years` : '1 year';
+    arr.push(y);
   }
-  let n = arr.length;
-  arr = arr.concat(arr1);
-  for (h = 0; h < items.length; h++) {
-    items.shift();
-    items.push(arr[h]);
+  if (days != 0) {
+    let d = (days > 1) ? `${days} days` : '1 day';
+    arr.push(d);
   }
-  return n;
+  if (hours != 0) {
+    let h = (hours > 1) ? `${hours} hours` : '1 hour';
+    arr.push(h);
+  }
+  if (mins != 0) {
+    let m = (mins > 1) ? `${mins} minutes` : '1 minute';
+    arr.push(m);
+  }
+  if (secs != 0) {
+    let s = (secs > 1) ? `${secs} seconds` : '1 second';
+    arr.push(s);
+  }
+  if (arr.length == 1) {
+    result += arr[0];
+    return result;
+  }
+  if (arr.length == 2) {
+    result = arr.join(' and ');
+    return result;
+  }
+  let last = arr.pop();
+  result = arr.join(', ') + ' and ' + last;
+  return result;
 }
 ```
 

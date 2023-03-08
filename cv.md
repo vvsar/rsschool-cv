@@ -1,5 +1,7 @@
 # Victor Saraev  
 
+![Photo](/img/mar0600.jpg) 
+
 ## Contacts  
 E-mail: victor_saraev@epam.com; vvsar@mail.ru  
 Skype: victor.saraev  
@@ -7,10 +9,10 @@ Telegram: Victor Saraev
 [LinkedIn](https://www.linkedin.com/in/victor-saraev-2aa72a62/) 
 
 ## About me  
-A highly proficient and experienced chemist currently working for EPAM Systems. Although lacking IT education and experience, I like the opportunity to receive new knowledge and skills necessary for IT specialists. Possessing good interpersonal and synthetic skills, I am on the point of boosting the personal growth that may turn my life upside down.
+A highly proficient and experienced chemist worked for EPAM Systems till 2022. Although lacking IT education and experience, I like the opportunity to receive new knowledge and skills necessary for IT specialists. Possessing good interpersonal and synthetic skills, I am on the point of boosting the personal growth that may turn my life upside down.
 
 ## IT hard skills  
-Beginner. Studied at RSSchool JS/FE 2020q3 course
+Beginner
 
 ## Code example
 [Partitition on - 5 kyu kata at Codewars:](https://www.codewars.com/kata/525a037c82bf42b9f800029b)
